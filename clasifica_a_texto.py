@@ -20,8 +20,8 @@
 # importa las librerias necesarias
 import argparse
 import datetime
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import load_model
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import load_model
 
 # importa el modelo a utilizar. Si se creó otro modelo nuevo,
 # unicamente hay que cambiar el nombre del archivo en la siguiente linea:
@@ -57,3 +57,4 @@ for i, j in result:
     if i >= args.nivel_confianza:
         read_data = f.write(str(i) + ' ' + j + '\n')
 f.close()
+print('exitosamente guardado a texto')

@@ -16,8 +16,8 @@
 
 
 # importa las librerias necesarias
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import load_model
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import load_model
 
 # importa el modelo a utilizar. Si se creó otro modelo nuevo,
 # unicamente hay que cambiar el nombre del archivo en la siguiente linea:
